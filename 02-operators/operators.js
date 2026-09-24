@@ -187,16 +187,7 @@ let bmi = weight / (height * height);
 console.log("BMI:", Math.round(bmi * 10) / 10); // rounded to 1 decimal
 
 
-
-// ================================
-// Operators Practice
-// Date: 2026-09-24
-// Author: Talha Rana
-// ================================
-
-// ================================
-// PART 1: Arithmetic Operators
-// ================================
+//  Practical Examples
 
 let d = 10;
 let e = 3;
@@ -209,9 +200,6 @@ console.log("Divide:", d / e);
 console.log("Remainder:", d % e);
 console.log("Power:", d ** e);
 
-// ================================
-// PART 2: Assignment Operators
-// ================================
 
 console.log("\n=== Assignment ===");
 let z = 10;
@@ -229,9 +217,7 @@ console.log("After *= 2:", z);
 z /= 4;
 console.log("After /= 4:", z);
 
-// ================================
-// PART 3: Comparison Operators
-// ================================
+
 
 console.log("\n=== Comparison ===");
 console.log("5 == '5':", 5 == "5");
@@ -243,9 +229,7 @@ console.log("5 < 3:", 5 < 3);
 console.log("5 >= 5:", 5 >= 5);
 console.log("5 <= 4:", 5 <= 4);
 
-// ================================
-// PART 4: Logical Operators
-// ================================
+
 
 console.log("\n=== Logical ===");
 let isStudent = true;
@@ -255,27 +239,20 @@ console.log("AND (&&):", isStudent && isID);
 console.log("OR (||):", isStudent || isID);
 console.log("NOT (!):", !isStudent);
 
-// ================================
-// PART 5: Ternary Operator
-// ================================
 
 console.log("\n=== Ternary ===");
 let agee = 20;
 let status = agee >= 18 ? "Adult" : "Minor";
 console.log("Status:", status);
 
-// ================================
-// PART 6: String Operators
-// ================================
+
 
 console.log("\n=== String ===");
 let firstNamee = "Talha";
 let lastNamee = "Rana";
 console.log("Full Name:", firstNamee + " " + lastNamee);
 
-// ================================
-// PART 7: Increment/Decrement
-// ================================
+
 
 console.log("\n=== Increment/Decrement ===");
 let counter = 5;
@@ -295,16 +272,12 @@ console.log("p:", p);
 let q = 5;
 console.log("++q:", ++q);
 
-// ================================
-// PART 8: Operator Precedence
 
 
 console.log("\n=== Precedence ===");
 console.log("5 + 3 * 2:", 5 + 3 * 2);
 console.log("(5 + 3) * 2:", (5 + 3) * 2);
 
-
-//  Practical Examples
 
 
 console.log("\n=== Practical ===");
@@ -337,44 +310,3 @@ let usernamee = "admin";
 let passwords = "12345";
 let canLogin = usernamee === "admin" && passwords === "12345";
 console.log("Can login?", canLogin);
-
-// ================================
-// PART 10: EXERCISES (Khud Solve Karein)
-// ================================
-
-// Q1: 2 numbers ka sum, difference, product, quotient nikalein
-// TODO:
-
-// Q2: 5 numbers ka average nikalein
-// TODO:
-
-// Q3: Kya 25 even hai ya odd?
-// TODO:
-
-// Q4: 2 numbers mein se bara kaunsa hai?
-// TODO:
-
-// Q5: Celsius se Fahrenheit convert karein
-//      Formula: (C × 9/5) + 32
-// TODO:
-
-// Q6: Discount calculator banayein
-//      Agar total > 1000, toh 10% discount
-// TODO:
-
-// Q7: Check karein ke user 18 se bara hai ya nahi
-// TODO:
-
-// Q8: 3 numbers mein se sabse bara kaunsa hai?
-// TODO:
-
-// Q9: Counter banayein jo 5 se 10 tak count kare
-// TODO:
-
-// Q10: Kya string "hello" aur "HELLO" barabar hain?
-//      (Dono strict aur loose comparison try karein)
-// TODO:
-
-// ================================
-// End of File
-// ================================
