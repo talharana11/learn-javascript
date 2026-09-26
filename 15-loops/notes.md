@@ -52,7 +52,8 @@ while (i <= 5) {
 }
 ```
 
-**Kya hua:** Condition check hoti hai, agar sach hai to body chalti hai, phir dobara condition check hoti hai — yeh silsila condition k false hone tak chalta hai.
+**Kya hua:** Condition check hoti hai, agar sach hai to body chalti hai, phir dobara condition check hoti hai —
+yeh silsila condition k false hone tak chalta hai.
 
 **Zaroori:** `i++` likhna mat bhoolein — warna condition kabhi false nahi hogi aur **infinite loop** ban jayega.
 

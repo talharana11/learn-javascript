@@ -130,17 +130,14 @@ for (let i = 1; i <= 3; i++) {
 
 
 
-//  Extra Practical Examples (15-20 more)
-
-
-// 1. Reverse an array (loop se, .reverse() use kiye baghair)
+//  Reverse an array (loop se, .reverse() use kiye baghair)
 console.log("\n=== Reverse Array ===");
 let arr1 = ["a", "b", "c", "d"];
 for (let i = arr1.length - 1; i >= 0; i--) {
     console.log(arr1[i]);
 }
 
-// 2. Array mein sirf 3 se divisible numbers print karna
+//  Array mein sirf 3 se divisible numbers print karna
 console.log("\n=== Divisible by 3 ===");
 let nums = [3, 5, 6, 8, 9, 12, 14, 15];
 for (let i = 0; i < nums.length; i++) {
@@ -149,7 +146,7 @@ for (let i = 0; i < nums.length; i++) {
     }
 }
 
-// 3. Array ka largest number nikalna
+//  Array ka largest number nikalna
 console.log("\n=== Largest Number ===");
 let numbers = [12, 45, 3, 67, 22, 89, 5];
 let max = numbers[0];
@@ -160,7 +157,7 @@ for (let i = 1; i < numbers.length; i++) {
 }
 console.log(`Largest: ${max}`);   // 89
 
-// 4. Array ka smallest number nikalna
+//  Array ka smallest number nikalna
 console.log("\n=== Smallest Number ===");
 let min = numbers[0];
 for (let i = 1; i < numbers.length; i++) {
@@ -170,7 +167,7 @@ for (let i = 1; i < numbers.length; i++) {
 }
 console.log(`Smallest: ${min}`);   // 3
 
-// 5. Array ka average nikalna
+//  Array ka average nikalna
 console.log("\n=== Average ===");
 let total = 0;
 for (let i = 0; i < numbers.length; i++) {
@@ -178,7 +175,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(`Average: ${total / numbers.length}`);
 
-// 6. Number prime hai ya nahi check karna
+//  Number prime hai ya nahi check karna
 console.log("\n=== Is Prime? (checking 17) ===");
 let num = 17;
 let isPrime = true;
@@ -193,7 +190,7 @@ for (let i = 2; i < num; i++) {
 }
 console.log(isPrime ? `${num} is prime` : `${num} is not prime`);
 
-// 7. 1 se 50 tak sab prime numbers print karna
+//  1 se 50 tak sab prime numbers print karna
 console.log("\n=== Prime Numbers (1-50) ===");
 for (let n = 2; n <= 50; n++) {
     let prime = true;
@@ -208,7 +205,7 @@ for (let n = 2; n <= 50; n++) {
     }
 }
 
-// 8. String reverse karna (loop se)
+//  String reverse karna (loop se)
 console.log("\n=== Reverse String ===");
 let str = "javascript";
 let reversedStr = "";
@@ -217,7 +214,7 @@ for (let i = str.length - 1; i >= 0; i--) {
 }
 console.log(reversedStr);   // tpircsavaj
 
-// 9. Palindrome check karna (string)
+//  Palindrome check karna (string)
 console.log("\n=== Palindrome Check ===");
 let word = "madam";
 let isPalindrome = true;
@@ -229,7 +226,7 @@ for (let i = 0; i < word.length / 2; i++) {
 }
 console.log(isPalindrome ? `${word} is a palindrome` : `${word} is not a palindrome`);
 
-// 10. Vowels count karna string mein
+//  Vowels count karna string mein
 console.log("\n=== Count Vowels ===");
 let sentence = "Talha is a frontend developer";
 let vowels = "aeiouAEIOU";
@@ -241,7 +238,7 @@ for (let i = 0; i < sentence.length; i++) {
 }
 console.log(`Vowels: ${vowelCount}`);
 
-// 11. Fibonacci series (10 terms)
+//  Fibonacci series (10 terms)
 console.log("\n=== Fibonacci Series ===");
 let a = 0, b = 1;
 console.log(a);
@@ -253,7 +250,7 @@ for (let i = 3; i <= 10; i++) {
     b = next;
 }
 
-// 12. Object array k andar loop chalana
+//  Object array k andar loop chalana
 console.log("\n=== Loop Through Object Array ===");
 let users = [
     { name: "Ali", age: 22 },
@@ -264,7 +261,7 @@ for (let i = 0; i < users.length; i++) {
     console.log(`${users[i].name} - ${users[i].age} years old`);
 }
 
-// 13. Object array mein se sirf 21+ age wale nikalna
+//  Object array mein se sirf 21+ age wale nikalna
 console.log("\n=== Users Above 21 ===");
 for (let i = 0; i < users.length; i++) {
     if (users[i].age > 21) {
@@ -272,7 +269,7 @@ for (let i = 0; i < users.length; i++) {
     }
 }
 
-// 14. Nested loop se multiplication table (1 to 5)
+//  Nested loop se multiplication table (1 to 5)
 console.log("\n=== Multiplication Tables (1 to 5) ===");
 for (let i = 1; i <= 5; i++) {
     console.log(`\n-- Table of ${i} --`);
@@ -281,7 +278,7 @@ for (let i = 1; i <= 5; i++) {
     }
 }
 
-// 15. Right-angle triangle number pattern
+//  Right-angle triangle number pattern
 console.log("\n=== Number Pattern ===");
 for (let i = 1; i <= 5; i++) {
     let row = "";
@@ -297,7 +294,7 @@ for (let i = 1; i <= 5; i++) {
 // 1 2 3 4
 // 1 2 3 4 5
 
-// 16. Array mein duplicate values find karna
+//  Array mein duplicate values find karna
 console.log("\n=== Find Duplicates ===");
 let dupArr = [1, 2, 3, 2, 4, 5, 1, 6];
 for (let i = 0; i < dupArr.length; i++) {
@@ -308,7 +305,7 @@ for (let i = 0; i < dupArr.length; i++) {
     }
 }
 
-// 17. Array k elements ka sum aur product dono nikalna
+//  Array k elements ka sum aur product dono nikalna
 console.log("\n=== Sum and Product ===");
 let arr2 = [1, 2, 3, 4, 5];
 let arrSum = 0;
@@ -319,7 +316,7 @@ for (let i = 0; i < arr2.length; i++) {
 }
 console.log(`Sum: ${arrSum}, Product: ${arrProduct}`);
 
-// 18. while loop se countdown timer jaisa output
+//  while loop se countdown timer jaisa output
 console.log("\n=== Countdown ===");
 let count = 5;
 while (count > 0) {
