@@ -2,7 +2,9 @@
 
 ## Loops Kya Hain?
 
-Loops (ya "chakkar") JavaScript ka woh feature hain jo **ek hi code ko baar baar chalane** ki ijazat dete hain — **bina repeat kiye**. Simple lafzon mein: Loop ek **machine** ki tarah hai jo aapki di hui instruction ko **kitni baar bhi** chala sakti hai. Jaise agar aapko 1 se 100 tak numbers print karne hon, toh 100 `console.log()` likhne ke bajaye **ek loop** likh dein — kaam ho jayega.
+Loops (ya "chakkar") JavaScript ka woh feature hain jo **ek hi code ko baar baar chalane** ki ijazat dete hain — **bina repeat kiye**.
+Simple lafzon mein: Loop ek **machine** ki tarah hai jo aapki di hui instruction ko **kitni baar bhi** chala sakti hai.
+Jaise agar aapko 1 se 100 tak numbers print karne hon, toh 100 `console.log()` likhne ke bajaye **ek loop** likh dein — kaam ho jayega.
 
 ---
 
