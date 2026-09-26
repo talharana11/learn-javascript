@@ -309,7 +309,7 @@ switch ($day) {
         console.log("Start of week");
         break;
     case "Friday":
-        console.log("Weekend coming!");
+        console.log("Weekend coming!")
         break;
     case "Sunday":
         console.log("Rest day");
