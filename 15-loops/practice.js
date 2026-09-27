@@ -247,3 +247,61 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log(row);
 }
+
+
+
+// While loop practice exercises
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+
+let j = 2;
+while (j <= 10) {
+    console.log(j);
+    j += 2;
+}
+
+
+let k = 10;
+while (k >= 1) {
+    console.log(k);
+    k--;
+}
+
+
+let x = 1;
+let my_sum = 0;
+while (x <= 10) {
+    my_sum = my_sum + x;
+    x++;
+}
+console.log(`Sum: ${my_sum}`);
+
+
+let password = "";
+while (password !== "admin123") {
+    // Maan lijiye user se input aa raha hai
+    password = "admin123";   // Yahan real mein prompt() use hota hai
+    console.log("Password galat, phir try karein");
+}
+
+console.log("Login successful!");
+
+
+let z = 1;
+while (z <= 10) {
+    console.log(`5 x ${z} = ${5 * z}`);
+    z++;
+}
+
+
+let a = 1;          // 1. Initialize (shuru)
+while (a <= 5) {    // 2. Condition (kab tak chalega)
+    console.log(a);   // 3. Code (kya karna hai)
+    a++;              // 4. Update (aage barhao)
+}
+
