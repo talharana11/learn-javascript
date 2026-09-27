@@ -74,3 +74,176 @@ for (let i = 20; i >= 2; i--) {
         console.log(i)
     }
 }
+
+
+// nested loop
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        console.log(`i: ${i}, j: ${j} `);
+    }
+}
+
+
+//
+for (let i = 1; i <= 5; i++) {
+    let star = "";
+    for (let j = 1; j <= i; j++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+
+
+//
+for (let i = 20; i >= 1; i--) {
+    let star = "";
+    for (let j = 1; j <= i; j++) {
+        star = star + "*";
+    }
+    console.log();
+    console.log(star);
+}
+
+
+// pyramid pattern print karein
+for (let i = 1; i <= 10; i++) {
+    let row = "";
+
+    for (let j = 1; j <= 10 - i; j++) {
+        row = row + " ";
+    }
+
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        row = row + "*";
+    }
+    console.log(row);
+}
+
+
+// Q1
+for (let i = 1; i <= 5; i++) {
+    let star = "";
+    for (let j = 1; j <= 5; j++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+
+
+// Q2
+for (let i = 1; i <= 5; i++) {
+    let star = "";
+    for (let j = 1; j <= i; j++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+
+
+// Q3
+for (let i = 5; i >= 1; i--) {
+    let star = "";
+    for (let j = 1; j <= i; j++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+
+
+// Q4
+for (let i = 1; i <= 5; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row = row + j + " ";
+    }
+    console.log(row);
+}
+
+
+// Q5
+for (let i = 5; i >= 1; i--) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row = row + j + " ";
+    }
+    console.log(row);
+}
+
+
+// Q6
+for (let i = 1; i <= 5; i++) {
+    let row = "";
+    for (let j = 1; j <= 5 - i; j++) {
+        row = row + " ";
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        row = row + "*";
+    }
+    console.log(row);
+}
+
+
+// Q7
+for (let i = 5; i >= 1; i--) {
+    let row = "";
+    for (let j = 1; j <= 5 - i; j++) {
+        row = row + " ";
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        row = row + "*";
+    }
+    console.log(row);
+}
+
+
+// Q8
+for (let i = 1; i <= 5; i++) {
+    let star = "";
+    for (let j = 1; j <= 5 - i; j++) {
+        star = star + " ";
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+for (let i = 4; i >= 1; i--) {
+    let star = "";
+    for (let j = 1; j <= 5 - i; j++) {
+        star = star + " ";
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        star = star + "*";
+    }
+    console.log(star);
+}
+
+
+// Q9
+for (let table = 1; table <= 3; table++) {
+    console.log(`\nTable of ${table}:`);
+    for (let i = 1; i <= 3; i++) {
+        console.log(`${table} x ${i} = ${table * i}`);
+    }
+}
+
+
+// Q10
+let letters = "ABCDE";
+
+for (let i = 1; i <= 5; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row = row + letters[j - 1] + " ";
+    }
+    console.log(row);
+}
+
+// Alphabets
+for (let i = 1; i <= 5; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row = row + String.fromCharCode(64 + j) + " ";
+    }
+    console.log(row);
+}
