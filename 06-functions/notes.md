@@ -65,12 +65,12 @@ const info = (a, b) => {
 ```
 
 **Important farq (regular function vs arrow):**
-| Point | Regular Function | Arrow Function |
-|---|---|---|
-| `this` | Apna `this` hota hai (call par depend) | Apna `this` nahi, parent scope ka lete hain |
-| `arguments` object | Hota hai | Nahi hota |
-| Constructor (`new`) | Ho sakta hai | Nahi ho sakta |
-| Hoisting | Declaration hoist hoti hai | Nahi |
+| Point               | Regular Function                       | Arrow Function                              |
+|---------------------|----------------------------------------|---------------------------------------------|
+| `this`              | Apna `this` hota hai (call par depend) | Apna `this` nahi, parent scope ka lete hain |
+| `arguments` object  | Hota hai                               | Nahi hota                                   |
+| Constructor (`new`) | Ho sakta hai                           | Nahi ho sakta                               |
+| Hoisting            | Declaration hoist hoti hai             | Nahi                                        |
 
 ---
 
