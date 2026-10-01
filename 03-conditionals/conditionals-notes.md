@@ -1,7 +1,5 @@
 # JavaScript Notes (Roman Urdu)
 
-Aaj ke topics:
-
 1. `switch` statement
 2. `switch` vs `if / else if / else`
 3. `undefined` aur `null`
@@ -53,7 +51,7 @@ switch (expression) {
 
 `break` na ho to match hone ke baad bhi **neeche wale saare cases chalte rehte hain**, chahe wo match na hon. Isay **fall-through** kehte hain.
 
-```js
+````js
 let x = 1;
 
 switch (x) {
@@ -68,7 +66,7 @@ switch (x) {
 // One
 // Two
 // Default
-```
+
 
 `x = 1` tha, lekin `break` na hone ki wajah se `case 2` aur `default` bhi chal gaye.
 
@@ -108,7 +106,7 @@ switch (dayOfWeek) {
   default:
     console.log("Invalid day! Please enter a number between 1 and 7.");
 }
-```
+````
 
 **Kaise kaam karta hai:**
 
