@@ -1,4 +1,4 @@
-# JavaScript Type Coercion: Detailed Notes (Roman Urdu)
+# JavaScript Type Coercion
 
 ## Fehrist (Contents)
 

@@ -1,4 +1,4 @@
-# JavaScript Numbers: Detailed Notes (Roman Urdu)
+# JavaScript Numbers
 
 ## Fehrist (Contents)
 
