@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="prompt-btn">Show Prompt</button>
+    <p id="output"></p>
+
+    <script>
+        const btn = document.getElementById("prompt-btn");
+        const output = document.getElementById("output");
+
+        btn.addEventListener("click", () => {
+            const userName = prompt("Please enter your name?", "Guest");
+            if (userName !== null) {
+                output.textContent = "Hello, " + userName + "!";
+            } else {
+                output.textContent = "Prompt was Cancelled!";
+            }
+        });
+    </script>
+</body>
+
+</html>
