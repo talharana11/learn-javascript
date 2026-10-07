@@ -1,6 +1,4 @@
-# JavaScript Functions: Mukammal Notes (Roman Urdu)
-
-Is file mein functions, arrow functions, scope, quiz ke jawabat, aur saari labs/workshop ka code aur wazahat hai.
+# JavaScript Functions
 
 ## Fehrist (Contents)
 
@@ -12,18 +10,17 @@ Is file mein functions, arrow functions, scope, quiz ke jawabat, aur saari labs/
 6. [Default parameters](#6-default-parameters)
 7. [Arrow functions](#7-arrow-functions)
 8. [Scope (Global, Local, Block)](#8-scope-global-local-block)
-9. [Quiz ke jawabat](#9-quiz-ke-jawabat)
-10. [Calculator lab](#10-calculator-lab)
-11. [Boolean Check lab (booWho)](#11-boolean-check-lab-boowho)
-12. [Email Masking lab](#12-email-masking-lab)
-13. [Loan Qualification Checker workshop](#13-loan-qualification-checker-workshop)
-14. [Celsius to Fahrenheit lab](#14-celsius-to-fahrenheit-lab)
-15. [Card Counter lab](#15-card-counter-lab)
-16. [Leap Year lab](#16-leap-year-lab)
-17. [Truncate String lab](#17-truncate-string-lab)
-18. [Confirm Ending lab](#18-confirm-ending-lab)
-19. [Aam ghaltiyan (Common mistakes)](#19-aam-ghaltiyan-common-mistakes)
-20. [Review summary table](#20-review-summary-table)
+9. [Calculator lab](#9-calculator-lab)
+10. [Boolean Check lab (booWho)](#10-boolean-check-lab-boowho)
+11. [Email Masking lab](#11-email-masking-lab)
+12. [Loan Qualification Checker workshop](#12-loan-qualification-checker-workshop)
+13. [Celsius to Fahrenheit lab](#13-celsius-to-fahrenheit-lab)
+14. [Card Counter lab](#14-card-counter-lab)
+15. [Leap Year lab](#15-leap-year-lab)
+16. [Truncate String lab](#16-truncate-string-lab)
+17. [Confirm Ending lab](#17-confirm-ending-lab)
+18. [Aam ghaltiyan (Common mistakes)](#18-aam-ghaltiyan-common-mistakes)
+19. [Review summary table](#19-review-summary-table)
 
 ---
 
@@ -334,79 +331,7 @@ if (true) {
 
 ---
 
-## 9. Quiz ke jawabat
-
-### Functions quiz
-
-**Q1.** Output kya hoga?
-
-```js
-function mystery(a, b = 3) {
-  return a * b;
-}
-console.log(mystery(4));
-```
-
-**Jawab: `12`.** `a = 4`, `b` default `3`, to `4 * 3 = 12`.
-
-**Q2.** `sum` function ko call karne ka sahi tareeqa?
-
-**Jawab: `sum(1, 2)`**
-
-**Q3.** `return` na ho to default return value?
-
-**Jawab: `undefined`**
-
-### Arrow functions quiz
-
-**Q1.** Do parameters ka sum return karne wala arrow function:
-
-**Jawab: `(a, b) => a + b`**
-
-- `(a, b) => { a + b }` ghalat: `{}` ke saath `return` nahi, `undefined` milega.
-- `(a, b) => return a + b` ghalat: SyntaxError.
-- `a, b => a + b` ghalat: do parameters ke liye brackets lazmi.
-
-**Q2.** Koi parameter nahi, `"Hello"` return kare:
-
-**Jawab: `() => "Hello"`**
-
-**Q3.** Output:
-
-```js
-let multiply = (a, b = 1) => a * b;
-
-console.log(multiply(5)); // 5
-console.log(multiply(5, 2)); // 10
-```
-
-**Jawab: `5`, `10`.**
-
-### Scope quiz
-
-**Q1.**
-
-```js
-let x = 10;
-
-function printX() {
-  let x = 20;
-  console.log(x);
-}
-
-printX(); // 20
-console.log(x); // 10
-```
-
-**Jawab: `20`, `10`.** Local `x` aur global `x` alag variables hain.
-
-**Q2.** Block ke bahar `blockVar` access karne ka result: **`ReferenceError`**.
-
-**Q3.** Top level par `let` se declare variable ka scope: **Global scope**.
-
----
-
-## 10. Calculator lab
+## 9. Calculator lab
 
 ```js
 function calculateSum(num1, num2) {
@@ -466,7 +391,7 @@ console.log(calculateSquareRoot(100)); // 10
 
 ---
 
-## 11. Boolean Check lab (`booWho`)
+## 10. Boolean Check lab (`booWho`)
 
 **Maqsad:** function jo `true` return kare agar argument boolean primitive (`true` ya `false`) ho, warna `false`.
 
@@ -506,7 +431,7 @@ console.log(booWho("false")); // false
 
 ---
 
-## 12. Email Masking lab
+## 11. Email Masking lab
 
 **Maqsad:** email ke username ke beech ke characters ko `*` se chhupana.
 
@@ -608,7 +533,7 @@ function maskEmail(email) {
 
 ---
 
-## 13. Loan Qualification Checker workshop
+## 12. Loan Qualification Checker workshop
 
 ### Step 1: Variables
 
@@ -683,7 +608,7 @@ console.log(noLoanMsg); // You don't qualify for any loans.
 
 ---
 
-## 14. Celsius to Fahrenheit lab
+## 13. Celsius to Fahrenheit lab
 
 **Formula:**
 
@@ -720,7 +645,7 @@ function convertCtoF(celsius) {
 
 ---
 
-## 15. Card Counter lab
+## 14. Card Counter lab
 
 **Rules:**
 
@@ -820,7 +745,7 @@ function cardCounter(card) {
 
 ---
 
-## 16. Leap Year lab
+## 15. Leap Year lab
 
 **Rules:**
 
@@ -883,7 +808,7 @@ function isLeapYear(year) {
 
 ---
 
-## 17. Truncate String lab
+## 16. Truncate String lab
 
 **Maqsad:** string lambi ho to `num` characters tak kaat kar aakhir mein `...` lagao, warna string jaisi hai waisi wapis.
 
@@ -924,7 +849,7 @@ function truncateString(str, num) {
 
 ---
 
-## 18. Confirm Ending lab
+## 17. Confirm Ending lab
 
 **Maqsad:** check karo pehli string dusri string par khatam hoti hai ya nahi, bina `.endsWith()` ke.
 
@@ -965,7 +890,7 @@ function confirmEnding(str, target) {
 
 ---
 
-## 19. Aam ghaltiyan (Common mistakes)
+## 18. Aam ghaltiyan (Common mistakes)
 
 | Ghalti                                        | Nateeja                                  | Hal                          |
 | --------------------------------------------- | ---------------------------------------- | ---------------------------- |
@@ -983,7 +908,7 @@ function confirmEnding(str, target) {
 
 ---
 
-## 20. Review summary table
+## 19. Review summary table
 
 | Topic                                  | Ek line mein                                   |
 | -------------------------------------- | ---------------------------------------------- |
