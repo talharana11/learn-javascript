@@ -190,4 +190,164 @@ console.log(test());
 // Dusra return statement kabhi execute nahi hoga.
 
 
+// Square
+function square(num) {
+    return num * 2;
+}
 
+console.log(square(4));
+console.log(square(9));
+
+
+// Add Three Numbers
+function addThree(a, b, c) {
+    return a + b + c;
+}
+
+console.log(addThree(1, 2, 3));
+console.log(addThree(10, 20, 30));
+
+
+// Average
+function average(num1, num2) {
+    return (num1 + num2) / 2;
+}
+
+console.log(average(10, 20));
+console.log(average(3, 4));
+
+
+// Introduction
+function introduce(name, age) {
+    return `My name is ${name} and I am ${age} years old.`;
+}
+
+console.log(introduce("Talha", 22));
+
+
+// Check Number
+function checkNumber(number) {
+    if (number > 0) {
+        return "Positive";
+    } else if (number < 0) {
+        return "Negative";
+    } else {
+        return "Zero";
+    }
+}
+
+console.log(checkNumber(5));
+console.log(checkNumber(-3));
+console.log(checkNumber(0));
+
+
+// Voting Eligibility
+function canVote(age) {
+    if (age >= 18) {
+        return "You can vote.";
+    } else {
+        return "You cannot vote yet.";
+    }
+}
+
+console.log(canVote(20));
+console.log(canVote(15));
+
+
+// Get Minimum
+function getMin(num1, num2) {
+    if (num1 < num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+console.log(getMin(5, 9));
+console.log(getMin(12, 3));
+
+
+// Get Maximum of Three
+function getMaxOfThree(x, y, z) {
+    if (x > y) {
+        if (x > z) {
+            return x;
+        } else {
+            return z;
+        }
+    } else {
+        return y;
+    }
+}
+
+console.log(getMaxOfThree(4, 9, 2));
+console.log(getMaxOfThree(10, 3, 7));
+
+
+// Get Price with Discount
+function getPrice(price) {
+    if (price > 1000) {
+        const discount = price / 10;
+        return price - discount;
+    } else {
+        return price;
+    }
+}
+
+console.log(getPrice(2000));
+console.log(getPrice(500));
+
+
+// Get Day Name
+function getDayName(num) {
+    if (num === 1) {
+        return "Monday";
+    } else if (num === 2) {
+        return "Tuesday";
+    } else if (num === 3) {
+        return "Wednesday";
+    } else if (num === 4) {
+        return "Thursday";
+    } else if (num === 5) {
+        return "Friday";
+    } else if (num === 6) {
+        return "Saturday";
+    } else if (num === 7) {
+        return "Sunday";
+    } else {
+        return "Invalid Day";
+    }
+}
+
+console.log(getDayName(1));
+console.log(getDayName(3));
+console.log(getDayName(5));
+console.log(getDayName(9));
+
+
+// Get Days Name using Switch Case
+function getDaysName(num) {
+    switch (num) {
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        case 7:
+            return "Sunday";
+        default:
+            return "Invalid day";
+    }
+}
+
+console.log(getDaysName(1));
+console.log(getDaysName(3));
+console.log(getDaysName(5));
+console.log(getDaysName(9));
