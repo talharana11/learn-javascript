@@ -174,8 +174,8 @@ function showMessage() {
 showMessage();
 console.log(message);
 
-// pehle Local phir Global print hoga.kaunkki function ke andar jo variable define hoga wo local scope me hoga
-//  aur function ke bahar jo variable define hoga wo global scope me hoga.
+// pehle Local phir Global print hoga.kaunkki function ke andar jo variable define hoga wo local scope me hoga 
+// aur function ke bahar jo variable define hoga wo global scope me hoga.
 
 
 // return
@@ -351,3 +351,69 @@ console.log(getDaysName(1));
 console.log(getDaysName(3));
 console.log(getDaysName(5));
 console.log(getDaysName(9));
+
+
+// Capital letter
+function makeUpper(str) {
+    return str.toUpperCase();
+}
+
+console.log(makeUpper("hello"));
+
+
+// Capitalize First Letter
+function capitalize(str) {
+    const capital = str[0].toUpperCase();
+    const letter = str.slice(1);
+    return capital + letter;
+}
+
+console.log(capitalize("javascript"));
+console.log(capitalize("talha"));
+
+
+// Check String
+function isEmpty(str) {
+    if (str === "") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isEmpty(""));
+console.log(isEmpty("Hi"));
+
+
+// Repeat Word
+function repeatWord(word, time) {
+    return word.repeat(time);
+}
+
+console.log(repeatWord("talha ", 3));
+
+
+// Check String Starts with a Letter
+function startWithLetter(str, letter) {
+    if (str[0] === letter) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(startWithLetter("Apple", "A"));
+console.log(startWithLetter("Banana", "A"));
+
+
+// Check Number is Divisible by Another
+function isDivisible(num, divisor) {
+    if (num % divisor === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isDivisible(10, 5));
+console.log(isDivisible(10, 3));
