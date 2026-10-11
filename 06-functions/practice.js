@@ -417,3 +417,76 @@ function isDivisible(num, divisor) {
 
 console.log(isDivisible(10, 5));
 console.log(isDivisible(10, 3));
+
+
+// FizzBuzz
+function fizzBuzz(num) {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "fizzBuzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else if (num % 5 === 0) {
+        return "Bizz";
+    } else {
+        return num;
+    }
+}
+
+console.log(fizzBuzz(15));
+console.log(fizzBuzz(9));
+console.log(fizzBuzz(10));
+console.log(fizzBuzz(7));
+
+
+// Circle Area
+function circleArea(radius) {
+    return Math.PI * radius ** 2;
+}
+
+console.log(circleArea(5));
+
+
+// Simple Interest
+function simpleInterest(principal, rate, time) {
+    return (principal * rate * time) / 100;
+}
+
+console.log(simpleInterest(1000, 5, 2));
+
+
+// All Equal
+function allEqual(a, b, c) {
+    if (a === b && a === c) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(allEqual(5, 5, 5));
+console.log(allEqual(5, 5, 6));
+
+
+// Triple
+const triple = x => x * 3;
+console.log(triple(4));
+
+
+// Even ya Odd
+const isEven = x => {
+    if (x % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isEven(8));
+console.log(isEven(7));
+
+
+// Full Name Greeting
+const greetFull = (first, last) => {
+    return `Hello, ${first} ${last}!`;
+}
+
+console.log(greetFull("Talha", "Rana"));
