@@ -490,3 +490,55 @@ const greetFull = (first, last) => {
 }
 
 console.log(greetFull("Talha", "Rana"));
+
+
+// Increase Count
+let count = 5;
+function increase() {
+    count = count + 1;
+}
+increase();   // count = 6
+increase();   // count = 7
+console.log(count);  // 7
+
+// Reason: count global scope mein declare hai (let count = 5). Function ke andar count = count + 1 likha hai — 
+// yahan count ke aage let/const nahi hai, isliye yeh naya local variable nahi bana raha, balki global count
+// ko modify kar raha hai. Har increase() call par global count 1 se barh jata hai: 5 → 6 → 7. Isliye final
+// print 7 hota hai.
+
+
+// 
+function show() {
+    let secret = "hidden";
+}
+show();
+console.log(secret);
+
+// Reason: secret function ke andar let se declare hua hai — iska scope sirf show() function tak mehdood hai.
+// Function khatam hote hi secret destroy ho jata hai (memory se). Bahar console.log(secret) likhne par JS
+// ko pata hi nahi ke secret kya hai → ReferenceError throw hota hai.
+// Lesson: let/const function-scoped (aur block-scoped) hote hain, global nahi.
+
+
+// 
+function mystery(a, b = 2) {
+    return a * b;
+}
+console.log(mystery(5));      // a=5, b=2 (default) → 10
+console.log(mystery(5, 3));   // a=5, b=3           → 15
+console.log(mystery());       // a=undefined, b=2   → NaN
+
+// Reason: mystery(5) → b pass nahi hua, toh default b = 2 use hua → 5 × 2 = 10.
+// mystery(5, 3) → dono pass hue, default ignore hua → 5 × 3 = 15.
+// mystery() → a bhi pass nahi hua, toh a = undefined → undefined × 2 = NaN (Not a Number).
+// Lesson: Default parameter sirf tab lagta hai jab argument undefined ho (ya pass na ho). a ke liye koi default nahi tha, isliye NaN.
+
+
+//
+const calculate = (x) => {
+    x * 2;          // ❌ koi return nahi
+};
+console.log(calculate(5));
+
+// Reason: Arrow function mein curly braces { } use kiye hain, toh yeh block body ban gayi.
+// Block body mein return likhna zaroori hai. Yahan x * 2; calculate hua lekin return nahi hua → function undefined return karta hai.
