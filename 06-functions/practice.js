@@ -192,7 +192,7 @@ console.log(test());
 
 // Square
 function square(num) {
-    return num * 2;
+    return num * num;
 }
 
 console.log(square(4));
@@ -269,14 +269,12 @@ console.log(getMin(12, 3));
 
 // Get Maximum of Three
 function getMaxOfThree(x, y, z) {
-    if (x > y) {
-        if (x > z) {
-            return x;
-        } else {
-            return z;
-        }
-    } else {
+    if (x >= y && x >= z) {
+        return x;
+    } else if (y >= x && y >= z) {
         return y;
+    } else {
+        return z;
     }
 }
 
@@ -315,7 +313,7 @@ function getDayName(num) {
     } else if (num === 7) {
         return "Sunday";
     } else {
-        return "Invalid Day";
+        return "Invalid day";
     }
 }
 
@@ -394,16 +392,12 @@ console.log(repeatWord("talha ", 3));
 
 
 // Check String Starts with a Letter
-function startWithLetter(str, letter) {
-    if (str[0] === letter) {
-        return true;
-    } else {
-        return false;
-    }
+function startsWithLetter(str, letter) {
+    return str[0] === letter;
 }
 
-console.log(startWithLetter("Apple", "A"));
-console.log(startWithLetter("Banana", "A"));
+console.log(startsWithLetter("Apple", "A"));
+console.log(startsWithLetter("Banana", "A"));
 
 
 // Check Number is Divisible by Another
@@ -422,11 +416,11 @@ console.log(isDivisible(10, 3));
 // FizzBuzz
 function fizzBuzz(num) {
     if (num % 3 === 0 && num % 5 === 0) {
-        return "fizzBuzz";
+        return "FizzBuzz";
     } else if (num % 3 === 0) {
         return "Fizz";
     } else if (num % 5 === 0) {
-        return "Bizz";
+        return "Buzz";
     } else {
         return num;
     }
@@ -507,20 +501,21 @@ console.log(count);  // 7
 // print 7 hota hai.
 
 
-// 
+// Block Scope
 function show() {
     let secret = "hidden";
 }
 show();
-console.log(secret);
+// console.log(secret);  // ReferenceError aata hai, is liye comment hai
 
 // Reason: secret function ke andar let se declare hua hai — iska scope sirf show() function tak mehdood hai.
 // Function khatam hote hi secret destroy ho jata hai (memory se). Bahar console.log(secret) likhne par JS
 // ko pata hi nahi ke secret kya hai → ReferenceError throw hota hai.
-// Lesson: let/const function-scoped (aur block-scoped) hote hain, global nahi.
+// Lesson: let/const block-scoped hote hain. Function ki body bhi ek block hai,
+// is liye function ke andar banaya variable bahar nazar nahi aata.
 
 
-// 
+// Default Parameters
 function mystery(a, b = 2) {
     return a * b;
 }
@@ -534,7 +529,7 @@ console.log(mystery());       // a=undefined, b=2   → NaN
 // Lesson: Default parameter sirf tab lagta hai jab argument undefined ho (ya pass na ho). a ke liye koi default nahi tha, isliye NaN.
 
 
-//
+// 
 const calculate = (x) => {
     x * 2;          // ❌ koi return nahi
 };
