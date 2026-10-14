@@ -537,3 +537,68 @@ console.log(calculate(5));
 
 // Reason: Arrow function mein curly braces { } use kiye hain, toh yeh block body ban gayi.
 // Block body mein return likhna zaroori hai. Yahan x * 2; calculate hua lekin return nahi hua → function undefined return karta hai.
+
+// Extra Questions
+
+// Number Check
+function isNumber(num) {
+    return typeof num === "number" && !Number.isNaN(num);
+}
+
+console.log(isNumber(5));        // true
+console.log(isNumber(-3.14));    // true
+console.log(isNumber(0));        // true
+console.log(isNumber("5"));      // false
+console.log(isNumber(NaN));      // false
+console.log(isNumber(true));     // false
+console.log(isNumber([1]));      // false
+
+// Reason: typeof se type check hoti hai, aur NaN ka typeof bhi "number" hota hai, isliye aap ne alag se !Number.isNaN(num) lagaya.
+// Yeh us lab ka sab se ahem nukta tha.
+
+
+// Phone Number Masking
+function maskPhone(str) {
+    const first = str.slice(0, 2);
+    const show = str.slice(-3);
+    const stars = "*".repeat(str.length - 3);
+    return first + stars + show;
+}
+
+console.log(maskPhone("03001234567"));
+console.log(maskPhone("03451112233"));
+console.log(maskPhone("03312345678"));
+
+// Reason: "03001234567" ki length 11 hai, to 7 stars aur aakhri 4 digits: *******4567. Aap ke baaqi do numbers par bhi sahi output aayega.
+
+
+// Email Masking
+function maskEmail(str) {
+    const sign = str.indexOf("@");
+    const name = str.slice(0, sign);
+    const mail = str.slice(sign);
+
+    const start = name.slice(0, 1);
+    const end = name.slice(-1);
+    const stariq = "*".repeat(name.length - 2);
+    return start + stariq + end + mail;
+}
+
+console.log(maskEmail("talharahim351@gmail.com"));
+
+// Reason: "talharahim351@gmail.com" ke liye, @ ka position 9 hai. Name "talharahim351" hai, aur mail "@gmail.com" hai.
+// Start = "t", End = "1", Stars = "**********" (9-2 = 7 stars).
+// Return = "t**********1@gmail.com".
+
+
+// Username Creation
+function createUsername(firstName, lastName) {
+    const firstLetter = firstName.trim().slice(0, 1);
+    const fullName = firstLetter + lastName.trim();
+    const userName = fullName.toLowerCase();
+    return userName;
+}
+
+console.log(createUsername("Talha", "Rana"));
+console.log(createUsername("Ali", "Khan"));
+console.log(createUsername("  Sara ", " Ahmed "));
